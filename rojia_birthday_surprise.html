@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>برای روژیا 💚</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap');
+:root{--green:#244b3b;--sage:#9eae91;--cream:#f7f6ed;--pink:#e8b9b1}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;font-family:'Vazirmatn',Tahoma,sans-serif;color:var(--green);
+background:radial-gradient(circle at 15% 15%,#dfe8d8 0,transparent 28%),radial-gradient(circle at 90% 80%,#ead8ce 0,transparent 30%),var(--cream);
+display:grid;place-items:center;padding:22px;overflow-x:hidden}
+.card{width:min(100%,680px);background:#ffffffc9;border:1px solid #fff;border-radius:30px;padding:clamp(24px,6vw,52px);text-align:center;box-shadow:0 22px 70px #294c3518;position:relative;overflow:hidden}
+.card:before,.card:after{content:"✿";position:absolute;color:#a6b89b66;font-size:80px}
+.card:before{top:5px;left:18px;transform:rotate(-20deg)}.card:after{bottom:0;right:20px;transform:rotate(18deg)}
+.eyebrow{letter-spacing:3px;font-size:12px;color:#82947c;font-weight:700}
+h1{font-size:clamp(40px,10vw,66px);margin:12px 0 4px;color:#315d47;font-weight:800}
+.subtitle{font-size:15px;color:#788878;margin:0 0 28px}
+.flower{font-size:38px;margin:12px}
+.rule{height:1px;background:linear-gradient(90deg,transparent,#b7c6ae,transparent);margin:26px 0}
+button{font:600 15px 'Vazirmatn',sans-serif;border:0;border-radius:999px;padding:14px 28px;background:#315d47;color:white;cursor:pointer;box-shadow:0 8px 20px #315d4730;transition:.2s}
+button:hover{transform:translateY(-2px);background:#244b3b}
+.letter{display:none;text-align:right;line-height:2.25;font-size:15px;color:#40594a;background:#f3f5ed;border-radius:20px;padding:22px;margin-top:24px;animation:appear .7s ease}
+.letter.show{display:block}
+.sign{text-align:left;color:#789078;margin-top:18px;font-weight:600}
+.small{font-size:12px;color:#98a394;margin-top:26px}
+@keyframes appear{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+.petal{position:fixed;top:-20px;pointer-events:none;animation:fall linear forwards;z-index:5}
+@keyframes fall{to{transform:translateY(110vh) rotate(500deg);opacity:.2}}
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="eyebrow">A LITTLE PAGE MADE JUST FOR YOU</div>
+  <div class="flower">🌿 ✿ 🌿</div>
+  <h1>روژیا</h1>
+  <p class="subtitle">امروز، دنیا بهانه‌ی قشنگ‌تری برای جشن گرفتن دارد.</p>
+  <div class="rule"></div>
+  <p style="font-size:17px;font-weight:600">یه چیزی هست که دلم می‌خواد امروز بهت بگم...</p>
+  <button id="open">نامه‌ی مخصوص تو رو باز کن 💌</button>
+  <section class="letter" id="letter">
+    روژیای عزیزم،<br><br>
+    تولدت مبارک! 💚<br><br>
+    امیدوارم سال تازه‌ی زندگیت پر از اتفاق‌هایی باشه که بعدها با یادآوریشون، لبخند روی لبت بشینه. امیدوارم هر روز کمی بیشتر به خودت، به توانایی‌هات و به رؤیاهایی که توی قلبت داری نزدیک بشی.<br><br>
+    می‌دونم آرزوی دکتر شدن برات فقط انتخاب یک شغل نیست؛ رؤیاییه که براش تلاش می‌کنی و آینده‌ایه که با امید بهش نگاه می‌کنی. آرزو می‌کنم یه روز روپوش سفیدت رو با افتخار بپوشی و بدونی تمام قدم‌هایی که برداشتی، تو رو به همون جایی رسوندن که همیشه تصورش می‌کردی.<br><br>
+    اما بین تمام آرزوهای بزرگی که برات دارم، یه آرزوی ساده‌تر هم هست: هیچ‌وقت در شلوغیِ رسیدن به خواسته‌هات، خودت و قشنگی‌های زندگی رو فراموش نکنی. دلت آروم باشه، آدم‌های خوبی کنارت باشن و همیشه دلیلی برای ذوق کردن داشته باشی.<br><br>
+    ممنون که با بودنت، بخشی از خاطره‌های قشنگ این دنیا رو می‌سازی. امیدوارم زندگی باهات مهربون باشه؛ نه فقط امروز، بلکه در تمام روزهایی که هنوز نیومدن.<br><br>
+    **تولدت مبارک، روژیا.** امیدوارم بهترین فصل زندگی‌ات تازه شروع شده باشه. 🌷
+    <div class="sign">با کلی آرزوی خوب برای تو ♡</div>
+  </section>
+  <div class="small">made with love, just for Rojia · 🌱</div>
+</main>
+<script>
+const btn=document.getElementById('open'),letter=document.getElementById('letter');
+btn.addEventListener('click',()=>{letter.classList.add('show');btn.textContent='این نامه همیشه برای تو می‌مونه 💚';btn.disabled=true;for(let i=0;i<24;i++){let p=document.createElement('span');p.className='petal';p.textContent=['✿','❀','🍃','♥'][Math.floor(Math.random()*4)];p.style.left=Math.random()*100+'vw';p.style.animationDuration=(4+Math.random()*5)+'s';p.style.fontSize=(14+Math.random()*18)+'px';document.body.appendChild(p);setTimeout(()=>p.remove(),9500)}});
+</script>
+</body>
+</html>
